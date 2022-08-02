@@ -267,6 +267,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 150px;
 }
 
 .gigs #head {
@@ -330,3 +331,87 @@ body {
 .clean h3 {
     margin-top: 20px;
 }
+
+.gig-btn {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: ease-in-out 0.3s;
+}
+
+.gig-btn:hover {
+    -webkit-box-shadow: 5px 5px 0px 1px #000000;
+    box-shadow: 5px 5px 0px 1px #000000;
+    transform: translateX(-5px) translateY(-5px);
+}
+
+.footer-section {
+    background-color: var(--color1);
+    transition: 0.5s;
+}
+
+.active-link {
+    color: #F988E1!important;
+}
+
+.footLogo {
+    width: 200px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links ul li {
+    margin-right: 30px;
+    list-style: none;
+}
+
+.footer-links ul a {
+    text-decoration: none;
+    color: var(--color2);
+    transition: 0.5s;
+}
+
+.footer-links ul a:hover {
+    filter: invert(1);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--color2);
+    transition: 0.5s;
+}
+
+.footer-info p {
+    color: var(--color2);
+}
+
+.footer-line {
+    width: 100%;
+    height: 10px;
+    background-color: #8458B3;
+}
+
+ğ*
