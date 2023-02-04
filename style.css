@@ -18,6 +18,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    z-index: -1;
+    background-color: color: var(--color2);
+    ;
 }
 
 .navbar {
@@ -54,7 +57,7 @@ body {
     justify-content: center;
     transition: transform .25s, opacity .35s;
     margin-left: 30px;
-    margin-top: -15px;
+    margin-top: -20px;
 }
 
 .span3 {
@@ -84,6 +87,7 @@ body {
     border-radius: 50%;
     position: absolute;
     margin-left: 23px;
+    margin-top: -5px;
 }
 
 #checkbox:checked~.line {
@@ -115,6 +119,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    z-index: 1;
 }
 
 .welcome-info h1 {
@@ -279,7 +284,7 @@ body {
 }
 
 .gig-list img {
-    width: 500px;
+    width: 450px;
     border-radius: 20px;
 }
 
@@ -291,7 +296,7 @@ body {
 .gig-list h3 {
     margin-top: -2px;
     font-size: 20px;
-    width: 500px;
+    width: 450px;
 }
 
 .gig-item {
@@ -302,7 +307,7 @@ body {
 }
 
 #syrobell {
-    width: 500px;
+    width: 450px;
     height: 300px;
     object-fit: cover;
 }
@@ -313,6 +318,15 @@ body {
 
 #denoise img:hover {
     filter: brightness(30%);
+}
+
+#blob1 {
+    filter: invert(40%) sepia(73%) saturate(500%) hue-rotate(226deg) brightness(85%) contrast(82%);
+    position: absolute;
+    left: -500px;
+    top: 650px;
+    transform: rotate(90deg);
+    z-index: 0;
 }
 
 #blob2 {
@@ -414,4 +428,58 @@ body {
     background-color: #8458B3;
 }
 
-ğ*
+.main-section {
+    background-color: var(--color1);
+}
+
+.main-section .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.main-section .head h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.project {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.projectButton {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: ease-in-out 0.3s;
+    margin-top: 10px;
+}
+
+.projectButton:hover {
+    -webkit-box-shadow: 5px 5px 0px 1px #000000;
+    box-shadow: 5px 5px 0px 1px #000000;
+    transform: translateX(-5px) translateY(-5px);
+}
+
+@media only screen and (max-width: 840px) {
+    #blob1 {
+        display: none;
+    }
+    .gig-list img {
+        width: 400px;
+    }
+    .gig-list h3 {
+        width: 400px;
+    }
+    #syrobell {
+        width: 400px;
+    }
+}
